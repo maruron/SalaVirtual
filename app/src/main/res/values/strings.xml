@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">P Sala Virtual</string>
+    <string name="rodinha">1 - Rodinha</string>
+    <string name="tarefa">2 - Tarefa</string>
+    <string name="lanche">3 - Lanche</string>
+    <string name="brincar">4 - Brincadeira</string>
+    <string name="historia">5 - Historinha</string>
+    <string name="casa">6 - Casa</string>
+    <string name="descricaoRodinha">Imagem de crianças em uma roda</string>
+    <string name="descricaoTarefa">Imagem de crianças fazendo as tarefas</string>
+    <string name="descricaoLanche">Imagem de crianças lanchando</string>
+    <string name="descricaoBrincar">Imagem de crianças brincando</string>
+    <string name="descricaoHistoria">Imagem de crianças lendo</string>
+    <string name="descricaoCasa">Imagem de crianças indo para casa</string>
+    <string name="telaInicio">Tela de inicio</string>
+    <string name="mensagem">Comeco</string>
+    <string name="vamoLa">Vamos Lá</string>
+    <string name="nomeCrinaca">Digite o nome da Criança</string>
+    <string name="idadeCrianca"> Digite a idade da Criança</string>
+    <string name="desBoRodinha">1 - Rodinha</string>
+    <string name="desBoTarefa">2 - Tarefa</string>"
+    <string name="desBoLanche">3 - Lanche</string>"
+    <string name="desBoBrincar">4 - Brincar</string>
+    <string name="desBoHistoria">5 - História</string>
+    <string name="desBoCasa">6 - Casa</string>
+    <string name="desBoVamos">Vamos Lá</string>
+    <string name="desNome">Digite o nome da criança</string>
+    <string name="desIdade">Digite a idade da criança</string>"
+    <string name="ola">Olá, %1$s!</string>
+    <string name="aindaNao">Ainda não</string>
+    <string name="nome">Nome</string>
+    <string name="idade">Idade</string>
+    <string name="Iniciando">Iniciando</string>
+    <string name="Adicionar">Adicionar</string>
+    <string name="QtdCrianças">Digite a quantidade de crianças</string>
+    <string name="TextBoas">Olá, primeiro nos diga a quantidade de alunos</string>
+</resources>

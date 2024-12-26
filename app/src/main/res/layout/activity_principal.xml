@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+   >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Principal">
+
+        <TextView
+            android:id="@+id/textMensagem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            android:text="@string/mensagem"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/tarefa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/black"
+            android:text="@string/tarefa"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:contentDescription="@string/desBoTarefa"
+            app:layout_constraintBottom_toTopOf="@+id/historia"
+            app:layout_constraintEnd_toStartOf="@+id/lanche"
+            app:layout_constraintStart_toEndOf="@+id/rodinha" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/rodinha"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/black"
+            android:text="@string/rodinha"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:contentDescription="@string/desBoRodinha"
+            app:layout_constraintBottom_toTopOf="@+id/brincar"
+            app:layout_constraintEnd_toStartOf="@+id/tarefa"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/lanche"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/black"
+            android:text="@string/lanche"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:contentDescription="@string/desBoLanche"
+            app:layout_constraintBottom_toTopOf="@+id/casa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tarefa" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/historia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/black"
+            android:text="@string/historia"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:contentDescription="@string/desBoHistoria"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/casa"
+            app:layout_constraintStart_toEndOf="@+id/brincar" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/casa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/black"
+            android:text="@string/casa"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:contentDescription="@string/desBoCasa"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/historia" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/brincar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/black"
+            android:text="@string/brincar"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:contentDescription="@string/desBoBrincar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/historia"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/telaInicio"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/sala_de_aul" />
+
+        <ImageView
+
+            android:id="@+id/imageRoda"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/descricaoRodinha"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/rodinha" />
+
+        <ImageView
+
+            android:id="@+id/imageTarefa"
+            android:layout_width="0dp"
+            android:layout_height="500dp"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/descricaoTarefa"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/tarefa" />
+
+        <ImageView
+
+            android:id="@+id/imageLanche"
+            android:layout_width="0dp"
+            android:layout_height="500dp"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/descricaoLanche"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/lanche" />
+
+        <ImageView
+
+            android:id="@+id/imageBrincar"
+            android:layout_width="0dp"
+            android:layout_height="500dp"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/descricaoBrincar"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/brincadeira" />
+
+        <ImageView
+
+            android:id="@+id/imageHistorinha"
+            android:layout_width="0dp"
+            android:layout_height="500dp"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/descricaoHistoria"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/historinha" />
+
+        <ImageView
+
+            android:id="@+id/imageCasa"
+            android:layout_width="0dp"
+            android:layout_height="500dp"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/descricaoCasa"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/casa" />
+
+        <TextView
+            android:id="@+id/textMensagem2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/textMensagem"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
